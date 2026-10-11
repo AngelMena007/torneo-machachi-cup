@@ -1,0 +1,132 @@
+.inscripcion-grid {
+  display: grid;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .inscripcion-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.inscripcion-info__sub {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1.0625rem;
+  margin: 1.25rem 0 2rem;
+  line-height: 1.65;
+}
+
+.inscripcion-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+}
+
+.inscripcion-info__list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.inscripcion-info__list .material-symbols-outlined {
+  color: #ff5a62;
+}
+
+.inscripcion-form-wrap {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--r-lg);
+  padding: 2rem;
+}
+
+.inscripcion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inscripcion-form .field__label {
+  font-weight: 700;
+}
+
+.inscripcion-form__row {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+.inscripcion-form__capitan,
+.inscripcion-form__jugadores {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--r);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.inscripcion-form__capitan {
+  border-left: 3px solid #ff5a62;
+  background: rgba(255, 90, 98, 0.04);
+}
+
+.inscripcion-form__jugadores {
+  border-left: 3px solid #8fce6b;
+  background: rgba(143, 206, 107, 0.05);
+}
+
+.inscripcion-form__jugadores > legend {
+  color: #a8e58a;
+}
+
+.inscripcion-form__capitan legend,
+.inscripcion-form__jugadores legend {
+  padding: 0 0.5rem;
+  margin-bottom: 0.125rem;
+}
+
+@media (min-width: 640px) {
+  .inscripcion-form__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.inscripcion-form__jugador {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.inscripcion-form__jugador + .inscripcion-form__jugador {
+  margin-top: 0.5rem;
+}
+
+.inscripcion-form__jugador-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media (max-width: 480px) {
+  .inscripcion-form__jugador-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-feedback {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-feedback--ok {
+  color: #4ade80;
+}
+
+.form-feedback--error {
+  color: #f87171;
+}

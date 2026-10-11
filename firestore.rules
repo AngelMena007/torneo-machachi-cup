@@ -1,0 +1,66 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Equipos inscritos: lectura pública, solo creación (sin editar ni borrar)
+    match /equipos/{id} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasOnly([
+          'nombreEquipo', 'capitan', 'capitanFriendID', 'capitanURL', 'jugadores', 'steamURL', 'friendIDs', 'logoURL',
+          'suplente', 'suplenteFriendID', 'suplenteURL', 'creadoEn'
+        ])
+        && request.resource.data.nombreEquipo is string
+        && request.resource.data.nombreEquipo.size() >= 2
+        && request.resource.data.nombreEquipo.size() <= 40
+        && request.resource.data.capitan is string
+        && request.resource.data.capitan.size() <= 40
+        && request.resource.data.capitanFriendID is string
+        && request.resource.data.capitanFriendID.size() <= 40
+        && request.resource.data.capitanURL is string
+        && request.resource.data.capitanURL.size() <= 500
+        && request.resource.data.jugadores is list
+        && (request.resource.data.jugadores.size() == 4 || request.resource.data.jugadores.size() == 5)
+        && request.resource.data.steamURL is list
+        && request.resource.data.steamURL.size() == request.resource.data.jugadores.size()
+        && request.resource.data.steamURL[0] is string
+        && request.resource.data.steamURL[1] is string
+        && request.resource.data.steamURL[2] is string
+        && request.resource.data.steamURL[3] is string
+        && (request.resource.data.jugadores.size() == 4 || request.resource.data.steamURL[4] is string)
+        && request.resource.data.friendIDs is list
+        && request.resource.data.friendIDs.size() == request.resource.data.jugadores.size()
+        && request.resource.data.friendIDs[0] is string
+        && request.resource.data.friendIDs[1] is string
+        && request.resource.data.friendIDs[2] is string
+        && request.resource.data.friendIDs[3] is string
+        && (request.resource.data.jugadores.size() == 4 || request.resource.data.friendIDs[4] is string)
+        && request.resource.data.friendIDs[0].size() <= 40
+        && request.resource.data.friendIDs[1].size() <= 40
+        && request.resource.data.friendIDs[2].size() <= 40
+        && request.resource.data.friendIDs[3].size() <= 40
+        && (request.resource.data.jugadores.size() == 4 || request.resource.data.friendIDs[4].size() <= 40)
+        && request.resource.data.logoURL is string
+        && request.resource.data.logoURL.size() <= 2000
+        && request.resource.data.suplente is string
+        && request.resource.data.suplente.size() <= 40
+        && request.resource.data.suplenteFriendID is string
+        && request.resource.data.suplenteFriendID.size() <= 40
+        && request.resource.data.suplenteURL is string
+        && request.resource.data.suplenteURL.size() <= 500
+        && request.resource.data.creadoEn == request.time;
+      allow update, delete: if false;
+    }
+
+    // Datos de contacto del capitán: nadie puede leerlos desde la web (solo desde la consola de Firebase)
+    match /contactos/{id} {
+      allow read, update, delete: if false;
+      allow create: if request.resource.data.keys().hasOnly(['equipoId', 'discord', 'whsp', 'creadoEn'])
+        && request.resource.data.equipoId is string
+        && request.resource.data.discord is string
+        && request.resource.data.discord.size() <= 20
+        && request.resource.data.whsp is string
+        && request.resource.data.whsp.size() <= 12
+        && request.resource.data.creadoEn == request.time;
+    }
+  }
+}

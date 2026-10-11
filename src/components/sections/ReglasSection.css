@@ -1,0 +1,51 @@
+.reglas-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .reglas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .reglas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.regla-card {
+  background: var(--surface-container);
+  border: 1px solid var(--outline-var);
+  border-radius: var(--r-lg);
+  padding: 2rem;
+}
+
+.regla-card__icon-wrap {
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--r-full);
+  background: rgba(229, 9, 20, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.regla-card__icon-wrap .material-symbols-outlined {
+  color: #ff5a62;
+}
+
+.regla-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.regla-card__desc {
+  color: var(--on-surface-var);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
