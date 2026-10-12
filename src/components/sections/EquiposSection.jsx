@@ -51,14 +51,14 @@ export default function EquiposSection() {
       <div className="container">
         <SectionHeader
           dataAos="fade-up"
-          title="Equipos inscritos"
-          subtitle={loading || error ? "Los equipos que ya están en la competencia." : `${equipos.length} ${equipos.length === 1 ? "equipo inscrito" : "equipos inscritos"} hasta ahora.`}
+          title="Equipos pre-inscritos"
+          subtitle={loading || error ? "Los equipos que ya están en la competencia." : `${equipos.length} ${equipos.length === 1 ? "equipo pre-inscrito" : "equipos pre-inscritos"} hasta ahora.`}
         />
 
         {loading && <p className="equipos-msg">Cargando equipos...</p>}
         {error && <p className="equipos-msg equipos-msg--error">No se pudieron cargar los equipos. Intenta recargar la página.</p>}
         {!loading && !error && equipos.length === 0 && (
-          <p className="equipos-msg">Aún no hay equipos inscritos. ¡Sé el primero!</p>
+          <p className="equipos-msg">Aún no hay equipos pre-inscritos. ¡Sé el primero!</p>
         )}
 
         <div className="equipos-grid">

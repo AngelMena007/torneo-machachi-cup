@@ -147,7 +147,7 @@ export default function InscripcionSection() {
       <div className="container">
         <div className="inscripcion-grid">
           <div className="inscripcion-info" data-aos="fade-right">
-            <h2 className="section__title section__title--white">Inscribe a tu equipo</h2>
+            <h2 className="section__title section__title--white">Pre-inscribe a tu equipo</h2>
             <p className="inscripcion-info__sub">
               Completa el siguiente formulario con los datos de tu equipo. Asegúrate de que la información sea correcta, ya que será utilizada para contactarte de inmediato.
             </p>
@@ -348,7 +348,7 @@ export default function InscripcionSection() {
               </div>
 
               <button className="btn btn--primary btn--block" type="submit" disabled={status === "sending"}>
-                {status === "sending" ? "Inscribiendo..." : "Inscribir mi equipo"}
+                {status === "sending" ? "Pre-inscribiendo..." : "Pre-inscribir mi equipo"}
               </button>
 
               {status === "success" && <p className="form-feedback form-feedback--ok">{feedback}</p>}
