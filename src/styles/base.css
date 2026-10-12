@@ -124,12 +124,12 @@ ul {
 }
 
 .btn--primary {
-  background: var(--primary);
+  background: #ba1a1a;
   color: #fff;
 }
 
 .btn--primary:hover {
-  background: var(--primary-dark);
+  background: #9e1a1a;
   box-shadow: 0 8px 24px rgba(0, 74, 198, 0.25);
 }
 
