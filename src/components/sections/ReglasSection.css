@@ -49,3 +49,66 @@
   font-size: 0.9375rem;
   line-height: 1.65;
 }
+
+.regla-card__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.6rem 1.25rem;
+  border: 0;
+  border-radius: var(--r-full);
+  background: #e50914;
+  color: #fff;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.regla-card__action:hover {
+  background: #b80710;
+}
+
+.regla-imagen-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.regla-imagen-modal__contenido {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.regla-imagen-modal__contenido img {
+  max-width: min(90vw, 64rem);
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--r);
+}
+
+.regla-imagen-modal__cerrar {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border-radius: var(--r-full);
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1;
+}
