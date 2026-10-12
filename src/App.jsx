@@ -7,7 +7,7 @@ import EquiposSection from "./components/sections/EquiposSection"
 import FooterSection from "./components/sections/FooterSection"
 
 const heroData = {
-  title: "MACHACHI",
+  title:"MACHACHI",
   title1: "CUP",
   title2: "FECHA DE INSCRIPCIONES",
   subtitle:

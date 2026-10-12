@@ -25,6 +25,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: translateX(1%) scale(1.04);
 }
 
 .hero__overlay {
@@ -40,8 +41,9 @@
   position: relative;
   z-index: 10;
   text-align: center;
-  padding-inline: 1.5rem;
   max-width: 52rem;
+  padding-inline: 1.5rem;
+
 }
 
 .hero__eyebrow {
@@ -54,12 +56,12 @@
 }
 
 .hero__title {
-font-family: 'RoadRage', sans-serif;
+  font-family: 'RoadRage', sans-serif;
+  letter-spacing: 0.05em;
   font-size: 3.5rem;
-  text-transform: uppercase;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  margin-top: 300px
+  margin-top: 330px;
 }
 
 .hero__title1 {

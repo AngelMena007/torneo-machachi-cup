@@ -265,7 +265,7 @@ export default function InscripcionSection() {
                     <div className="inscripcion-form__jugador-row">
                       <div className="field field--dark">
                         <label className="field__label field__label--dark" htmlFor={`jugador-${index}`}>
-                          Datos del jugador {index + 1}:
+                          Datos del jugador {index + 2}:
                         </label>
                         <input
                           className="field__input field__input--dark"

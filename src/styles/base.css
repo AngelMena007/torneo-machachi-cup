@@ -46,8 +46,12 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  scrollbar-width: none;
+  ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -56,6 +60,7 @@ body {
   color: var(--on-surface);
   line-height: 1.6;
   overflow-x: hidden;
+  margin:auto;
 }
 
 img {
