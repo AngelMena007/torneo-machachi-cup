@@ -2,7 +2,7 @@ import "./ReglasSection.css"
 import SectionHeader from "../atoms/SectionHeader"
 import { useEffect, useState } from "react"
 import imgPremios from "../../assets/img/PREMIOS_MACHACHI_CUP_OP2.jpeg"
-import docInfo from "../../assets/documents/MACHACHI_CUP_INFO.pdf"
+import docInfo from "../../assets/documents/MACHACHI_CUP_INFO2.pdf"
 import docReglas from "../../assets/documents/MACHACHI_CUP_REGLAS.pdf"
 
 const REGLAS = [
