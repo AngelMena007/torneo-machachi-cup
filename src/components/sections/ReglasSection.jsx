@@ -1,13 +1,16 @@
 import "./ReglasSection.css"
 import SectionHeader from "../atoms/SectionHeader"
 import { useEffect, useState } from "react"
+import imgPremios from "../../assets/img/PREMIOS_MACHACHI_CUP_OP2.jpeg"
+import docInfo from "../../assets/documents/MACHACHI_CUP_INFO.pdf"
+import docReglas from "../../assets/documents/REGLAS_MACHACHI_CUP.pdf"
 
 const REGLAS = [
   {
     icon: "groups",
     title: "Información del Torneo",
     desc: "Detalles generales, fechas de inscripcion y requisitos de participación.",
-    action: { type: "pdf", href: "src\\assets\\documents\\MACHACHI_CUP_INFO.pdf" },
+    action: { type: "pdf", href: docInfo },
   },
   {
     icon: "swords",
@@ -18,13 +21,13 @@ const REGLAS = [
     icon: "schedule",
     title: "Premios",
     desc: "Premios económicos para los equipos que lideren el primer y segundo lugar.",
-    action: { type: "image", src: "src\\assets\\img\\PREMIOS_MACHACHI_CUP_OP2.jpeg" },
+    action: { type: "image", src: imgPremios },
   },
   {
     icon: "gavel",
     title: "Reglas",
     desc: "Normas de competencia, puntualidad, juego limpio y sanciones.",
-    action: { type: "pdf", href: "src\\assets\\documents\\REGLAS_MACHACHI_CUP.pdf" },
+    action: { type: "pdf", href: docReglas },
   },
   {
     icon: "forum",
