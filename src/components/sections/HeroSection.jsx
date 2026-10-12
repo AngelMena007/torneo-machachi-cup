@@ -16,6 +16,7 @@ export default function HeroSection({ title, title1, title2, subtitle, primaryCt
           <div className="hero__title2">
           <span className="hero__title2-text">{title2}</span>
           </div>
+          <hr className="hero__divider"></hr>
         <p className="hero__sub">{subtitle}</p>
         <div className="hero__actions">
           <a className="btn btn--primary btn--lg" href={primaryCta.href}>
