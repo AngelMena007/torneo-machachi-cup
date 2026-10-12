@@ -55,7 +55,7 @@
 
 .hero__title {
 font-family: 'RoadRage', sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -104,6 +104,19 @@ font-family: 'RoadRage', sans-serif;
   filter: drop-shadow(2px 2px 0px #000);
 }
 
+.hero__title2-text {
+  font-family: 'RoadRage', sans-serif;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: skewX(-10deg) rotate(-1deg);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
 .hero__title em {
   font-style: italic;
   font-weight: 400;
@@ -115,7 +128,7 @@ font-family: 'RoadRage', sans-serif;
   font-weight: 400;
   max-width: 38rem;
   margin-inline: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .hero__actions {

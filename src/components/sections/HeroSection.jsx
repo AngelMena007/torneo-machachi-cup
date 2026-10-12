@@ -1,7 +1,7 @@
 import "./HeroSection.css"
 import imgFondo from "../../assets/img/img_hero.jpeg"
 
-export default function HeroSection({ title, title1, subtitle, primaryCta, secondaryCta }) {
+export default function HeroSection({ title, title1, title2, subtitle, primaryCta, secondaryCta }) {
   return (
     <section className="hero">
       <div className="hero__bg">
@@ -12,6 +12,9 @@ export default function HeroSection({ title, title1, subtitle, primaryCta, secon
         <h1 className="hero__title">{title}</h1>
         <div className="hero__title1">
           <span className="hero__title1-text">{title1}</span>
+          </div>
+          <div className="hero__title2">
+          <span className="hero__title2-text">{title2}</span>
           </div>
         <p className="hero__sub">{subtitle}</p>
         <div className="hero__actions">

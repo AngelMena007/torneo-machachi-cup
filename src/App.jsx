@@ -9,8 +9,9 @@ import FooterSection from "./components/sections/FooterSection"
 const heroData = {
   title: "MACHACHI",
   title1: "CUP",
+  title2: "FECHA DE INSCRIPCIONES",
   subtitle:
-    "Demuestra tu habilidad, estrategia y poder en nuestro torneo de Dota 2.",
+    "11 DE OCTUBRE - 1 DE NOVIEMBRE DE 2026 ",
   primaryCta: { label: "Inscríbete", href: "#inscripcion" },
   secondaryCta: { label: "Equipos Inscritos", href: "#equipos" },
 }

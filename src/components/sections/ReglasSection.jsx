@@ -5,33 +5,33 @@ import SectionHeader from "../atoms/SectionHeader"
 const REGLAS = [
   {
     icon: "groups",
-    title: "Equipos de 5 jugadores",
-    desc: "Cada equipo se inscribe con 5 jugadores titulares y, opcionalmente, 1 suplente. Debe haber un capitán responsable del equipo.",
+    title: "Información del Torneo",
+    desc: "Detalles generales, fechas de inscripcion y requisitos de participación.  \n |________________|", ///BOTON --> |________________|
   },
   {
     icon: "swords",
-    title: "Formato de partidas",
-    desc: "Las partidas se juegan en modo Captain's Mode, en el servidor y con la versión del juego definidos por la organización.",
+    title: "Formato de Torneo",
+    desc: "Fase de grupos, enfrentamientos y clasificación a la siguiente etapa.",
   },
   {
     icon: "schedule",
-    title: "Puntualidad",
-    desc: "Los equipos deben estar listos en el lobby a la hora indicada. Pasados 10 minutos de retraso se puede declarar derrota por W.O.",
+    title: "Premios",
+    desc: "Premios económicos para los equipos que lideren el primer y segundo lugar.",
   },
   {
     icon: "gavel",
-    title: "Juego limpio",
-    desc: "Están prohibidos los scripts, exploits, cuentas compartidas y cualquier forma de trampa. Quien incumpla será descalificado.",
+    title: "Reglas",
+    desc: "Normas de competencia, puntualidad, juego limpio y sanciones.  \n |____________________|", ///BOTON --> |________________|
   },
   {
     icon: "forum",
-    title: "Respeto",
-    desc: "No se toleran insultos, discriminación ni toxicidad hacia rivales, compañeros u organizadores, dentro ni fuera de la partida.",
+    title: "Patrocinadores",
+    desc: "Marcas y negocios que apoyan el torneo y sus beneficios para los participantes.  \n |____________________|", ///BOTON --> |________________|
   },
   {
     icon: "verified",
-    title: "Decisión final",
-    desc: "Cualquier disputa se resuelve con los organizadores del torneo y su decisión es definitiva.",
+    title: "Bonus adicionales por inscripción",
+    desc: "Beneficios exclusivos para los equipos participantes.",
   },
 ]
 
@@ -41,7 +41,7 @@ export default function ReglasSection() {
       <div className="container">
         <SectionHeader
           dataAos="fade-up"
-          title="Reglas del torneo"
+          title="Información General"
           subtitle="Lee con atención antes de inscribir a tu equipo."
         />
         <div className="reglas-grid">
