@@ -3,7 +3,7 @@ import imgFondo from "../../assets/img/img_hero.jpeg"
 
 export default function HeroSection({ title, title1, title2, subtitle, primaryCta, secondaryCta }) {
   return (
-    <section className="hero">
+    <section className="hero" id="inicio">
       <div className="hero__bg">
         <img src={imgFondo} alt="Machachi Cup" className="hero__img" loading="eager" />
       </div>

@@ -132,13 +132,13 @@ export default function InscripcionSection() {
     try {
       await inscribirEquipo(data)
       setStatus("success")
-      setFeedback("✓ ¡Equipo inscrito correctamente! \n Te contactaremos por Discord o WhatsApp para proceder con el pago.")
+      setFeedback("✓ ¡Equipo preinscrito correctamente! \n Te contactaremos por Discord o WhatsApp para proceder con la inscripción oficial y el pago.")
       setForm(initialForm)
       toast.success("¡Equipo inscrito correctamente!")
     } catch (error) {
-      console.error("Error al inscribir el equipo:", error)
-      fail("✗ No se pudo completar la inscripción. Intenta de nuevo.")
-      toast.error("Error al inscribir el equipo")
+      console.error("Error al preinscribir el equipo:", error)
+      fail("✗ No se pudo completar la preinscripción. Intenta de nuevo.")
+      toast.error("Error al preinscribir el equipo")
     }
   }
 
@@ -147,7 +147,7 @@ export default function InscripcionSection() {
       <div className="container">
         <div className="inscripcion-grid">
           <div className="inscripcion-info" data-aos="fade-right">
-            <h2 className="section__title section__title--white">Pre-inscribe a tu equipo</h2>
+            <h2 className="section__title section__title--white">Preinscribe a tu equipo</h2>
             <p className="inscripcion-info__sub">
               Completa el siguiente formulario con los datos de tu equipo. Asegúrate de que la información sea correcta, ya que será utilizada para contactarte de inmediato.
             </p>
@@ -348,7 +348,7 @@ export default function InscripcionSection() {
               </div>
 
               <button className="btn btn--primary btn--block" type="submit" disabled={status === "sending"}>
-                {status === "sending" ? "Pre-inscribiendo..." : "Pre-inscribir mi equipo"}
+                {status === "sending" ? "Preinscribiendo..." : "Preinscribir mi equipo"}
               </button>
 
               {status === "success" && <p className="form-feedback form-feedback--ok">{feedback}</p>}

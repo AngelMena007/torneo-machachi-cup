@@ -12,8 +12,8 @@ const heroData = {
   title2: "FECHA DE INSCRIPCIONES",
   subtitle:
     "11 DE OCTUBRE - 1 DE NOVIEMBRE DE 2026 ",
-  primaryCta: { label: "Inscríbete", href: "#inscripcion" },
-  secondaryCta: { label: "Equipos Inscritos", href: "#equipos" },
+  primaryCta: { label: "Preinscríbete", href: "#inscripcion" },
+  secondaryCta: { label: "Equipos Preinscritos", href: "#equipos" },
 }
 
 export default function App() {

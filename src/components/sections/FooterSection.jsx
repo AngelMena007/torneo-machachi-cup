@@ -1,9 +1,9 @@
 import "./FooterSection.css"
 
 const LINKS = [
-  { label: "Reglas", href: "#reglas" },
-  { label: "Inscripción", href: "#inscripcion" },
-  { label: "Equipos inscritos", href: "#equipos" },
+  { label: "Informacion", href: "#informacion" },
+  { label: "Preinscripción", href: "#inscripcion" },
+  { label: "Equipos Preinscritos", href: "#equipos" },
 ]
 
 export default function FooterSection() {
@@ -20,7 +20,7 @@ export default function FooterSection() {
             <br />
             ¿Tienes lo necesario para convertirte en una leyenda?
             <br />
-            <span style={{ fontWeight: 'bold' }}>¡Inscríbete ahora y demuestra de qué estás hecho!</span>
+            <span style={{ fontWeight: 'bold' }}>¡Preinscríbete ahora y demuestra de qué estás hecho!</span>
           </p>
         </div>
 

@@ -2,16 +2,16 @@ import "./Navbar.css"
 import { useState } from "react"
 
 const LINKS = [
-  { label: "Reglas", href: "#reglas" },
-  { label: "Inscripción", href: "#inscripcion" },
-  { label: "Equipos Inscritos", href: "#equipos" },
+  { label: "Información", href: "#informacion" },
+  { label: "Preinscripción", href: "#inscripcion" },
+  { label: "Equipos Preinscritos", href: "#equipos" },
 ]
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="topnav" id="inicio">
+    <header className="topnav">
       <div className="topnav__inner">
         <a className="topnav__logo" href="#inicio" onClick={() => setOpen(false)}>
           MACHACHI CUP

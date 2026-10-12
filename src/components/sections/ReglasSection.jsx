@@ -57,7 +57,7 @@ export default function ReglasSection() {
   }, [imagenVista])
 
   return (
-    <section className="section section--light" id="reglas">
+    <section className="section section--light" id="informacion">
       <div className="container">
         <SectionHeader
           dataAos="fade-up"
