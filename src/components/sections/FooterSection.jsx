@@ -1,7 +1,7 @@
 import "./FooterSection.css"
 
 const LINKS = [
-  { label: "Informacion", href: "#informacion" },
+  { label: "Información", href: "#informacion" },
   { label: "Preinscripción", href: "#inscripcion" },
   { label: "Equipos Preinscritos", href: "#equipos" },
 ]
